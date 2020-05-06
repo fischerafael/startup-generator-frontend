@@ -1,10 +1,18 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import Header from '../../components/header';
 
 import './style.css';
 import heroImg from '../../assets/hero-img.png'
 
-export default function Home() {   
+export default function Home() { 
+    
+    const history = useHistory()
+
+    function toLogin() {
+        history.push('/login');
+    }
+
     return (
         <>
             <Header />
@@ -19,8 +27,8 @@ export default function Home() {
                         <h2>Veja modelos de negócio de outras startups.</h2>
                         <h2>Encontre uma startup para investir</h2>
                         <div className="home-btn">
-                            <button>CRIAR STARTUP</button>
-                            <button>ENCONTRAR STARTUP</button>
+                            <button className="button" onClick={toLogin}>CRIAR STARTUP</button>
+                            <button className="button">ENCONTRAR STARTUP</button>
                         </div>
                     </div>
                 </div>
