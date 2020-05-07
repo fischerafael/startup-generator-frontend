@@ -13,6 +13,10 @@ export default function Registration() {
         history.push('/login');
     }
 
+    function handleRegistration() {
+        history.push('/profile');
+    }
+
 
     return (
         <>
@@ -37,7 +41,7 @@ export default function Registration() {
                             <button className="close-btn" onClick={goBack}>x</button>
                         </form>
                         <div className="registration-btn">                            
-                            <button className="button">CADASTRAR-SE</button>
+                            <button className="button" onClick={handleRegistration}>CADASTRAR-SE</button>
                         </div>
                     </div>
                 </div>

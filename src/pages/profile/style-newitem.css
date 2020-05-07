@@ -1,0 +1,36 @@
+.newitem-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+}
+
+.newitem-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 1000px;
+    height: 20vh;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    padding: 25px;
+}
+
+.newitem-content .close-btn {
+    position: absolute;    
+    right: 45px;
+    top: -20px;
+}
+
+.newitem-content form {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    grid-gap: 15px;
+    margin-top: 15px;
+    padding: 0 20px;
+}

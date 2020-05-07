@@ -1,0 +1,136 @@
+.profile-container {
+    width: 100%;
+    height: 90vh;
+    margin: 0 auto; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(250, 250, 250);
+}
+
+.info-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    background: #0036FF;
+    color: #fff;
+    width: 1200px;
+    margin-bottom: 7.5px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0,0,0,.1);
+    height: 10vh;
+    padding: 15px;    
+    align-items: center;
+}
+
+.info-contact {
+    padding: 0 15px;    
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    align-items: center;
+}
+
+.info-contact p {
+    font-size: 10px;
+    padding: 2.5px;
+    font-weight: 300;
+}
+
+.info-contact img {
+    width: 12px;
+    padding: 2.5px 0;
+}
+
+.info-name img {
+    width: 12px;    
+}
+
+.info-name button {
+    margin-left: 15px;
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: filter .5s;
+}
+
+.info-name button:hover {
+    filter: brightness(50%);    
+}
+
+.profile-container .info-container .info-container-content h2 {
+    font-size: 18px;
+    padding: 0;    
+}
+
+.profile-container .info-container .info-container-content p {
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.canvas-container {
+    width: 1200px;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 7.5px;  
+    align-items: center;
+}
+
+.problema {
+    background: white;
+    grid-row: 1/3;
+}
+
+.solucao {
+    background: white;
+    grid-row: 1/2;    
+}
+
+.proposta-de-valor {
+    background: white;
+    grid-row: 1/4;
+}
+
+.vantagem {
+    background: white;
+    grid-row: 1/2;
+}
+
+.segmento {
+    background: white;
+    grid-row: 1/3;
+}
+
+.metricas {
+    background: white;
+}
+
+.canais {
+    background: white;
+}
+
+.custos {
+    background: white;
+    grid-column: 1/3;
+}
+
+.receitas {
+    background: white;
+    grid-column: 4/6; 
+}
+
+.profile-container .info-container .close-btn {
+    position: absolute;    
+    right: 45px;
+    top: -20px;
+}
+
+.info-name {
+    display: flex;
+}
+
