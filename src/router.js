@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Dashboard from './pages/dashboard';
+import ContactInfo from './pages/contactinfo';
 import Home from './pages/home';
 import Login from './pages/login';
 import NewItem from './pages/newitem';
@@ -14,7 +14,7 @@ export default function Router() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/dashboard" component={Dashboard} />
+                <Route path="/contactinfo" component={ContactInfo} />
                 <Route path="/" exact component={Home} />
                 <Route path="/login" component={Login} />
                 <Route path="/newitem" component={NewItem} />

@@ -16,6 +16,19 @@ export default function Profile() {
     const [blur, setBlur] = useState('');
     const [type, setType] = useState('');
 
+    // redirect user
+    const history = useHistory();
+    // logs out user
+    function logoutHandler() {
+        localStorage.clear();
+        history.push('/');
+    }
+
+    // handling contact registration
+    function contactRegistrationHandler() {
+        history.push('/contactinfo');
+    }
+
     // handling newitem
     function openNewItemProblema() {
         setDisplayNewItem('');
@@ -77,15 +90,6 @@ export default function Profile() {
         setType('');
     }
 
-    // redirect user
-    const history = useHistory();
-    // logs out user
-    function logoutHandler() {
-        localStorage.clear();
-        history.push('/');
-    }
-
-
     return (
         <>
             <div className="profile-container" style={{filter: `${blur}`}}>
@@ -93,7 +97,7 @@ export default function Profile() {
                     <div className="info-container-content">                        
                         <div className="info-name">
                             <h2>Startup Generator</h2>
-                            <button>
+                            <button onClick={contactRegistrationHandler}>
                                 <img src={editar}/>
                             </button>                         
                         </div>    
